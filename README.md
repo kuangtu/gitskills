@@ -1,7 +1,13 @@
-# gitskills
-Creating a new branch is quick and simple.
-create dev.
-Merge
-the 1.0 version is finished!
-start to 2.0 version devl.
-push dev branch.
+# 1.前沿
+对于git内容学习整理。
+# 2.基础内容
+## 2.1 本地创建
+### 2.1.1  git init 
+生成了.git目录，对于文件、指针等进行存放。
+
+## 2.2 添加文件、文件夹
+### 2.2.1 git add filename
+执行上面的命令，没有任何显示，这就对了，Unix的哲学是“没有消息就是好消息”，说明添加成功。
+支持保存到了暂存区。
+
+![git-add-2](jpg\git-add-2.jpg)
