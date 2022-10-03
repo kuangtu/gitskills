@@ -9,7 +9,6 @@
 ### 2.2.1 git add filename
 执行上面的命令，没有任何显示，这就对了，Unix的哲学是“没有消息就是好消息”，说明添加成功。
 支持保存到了暂存区。
-
 ![git-add-2](jpg\git-add-2.jpg)
 
 ### 2.2.2 git commit -m "comment"
