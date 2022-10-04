@@ -100,6 +100,10 @@
 
 版本库中存放了很多东西：其中最重要的就是称为stage（或者叫index）的暂存区，还有Git为我们自动创建的第一个分支master，以及指向master的一个指针叫HEAD。
 
+![git区域](jpg\git区域.jpg)
+
+上图来自[云峰就她了](https://xiaorui.cc/archives/category/%e6%8a%80%e6%9c%af%e5%88%86%e4%ba%ab)的分享，作者其他的分享也都非常精彩，墙裂推荐。
+
 
 
 ## 2.6 撤销修改
@@ -116,4 +120,24 @@
 总之，就是让这个文件回到最近一次git commit或git add时的状态。
 （2）如果增到了暂存区，通过reset HEAD 回退到工作区。
 （3）git status，暂存区是干净的，工作区有修改。
+
+# 3. 使用规范
+
+主要包含了git的基本使用原则，以及提交规范。
+
+![git硬规范](jpg\git硬规范.jpg)
+
+
+
+![git提交规范](jpg\git提交规范.jpg)
+
+以上图片来自于【1】。
+
+
+
+# 4. 参考
+
+【1】 [云峰就她了](https://xiaorui.cc/) ，**墙裂推荐**
+
+
 
