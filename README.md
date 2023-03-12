@@ -9,13 +9,13 @@
 ### 2.2.1 git add filename
 执行上面的命令，没有任何显示，这就对了，Unix的哲学是“没有消息就是好消息”，说明添加成功。
 支持保存到了暂存区。
-![git-add-2](jpg\git-add-2.jpg)
+![git-add-2](jpg/git-add-2.jpg)
 
 ### 2.2.2 git commit -m "comment"
 
 对于放到暂存区的变动进行提交。
 
-![git-commit](jpg\git-commit.jpg)
+![git-commit](jpg/git-commit.jpg)
 
 1个文件变动了，2个insert。
 
@@ -24,7 +24,7 @@
 查看状态，对于之前的readme.txt文件修改其中一行的内容。
 此时执行```git status```：
 
-![git-status](jpg\git-status.png)
+![git-status](jpg/git-status.png)
 
 显示了“modified: readme.txt”，并且提示了没有增加到暂存区。
 
@@ -34,7 +34,7 @@
 
 展示和之前的不同：
 
-![git-diff](jpg\git-diff.jpg)
+![git-diff](jpg/git-diff.jpg)
 
 可以看到，在1-2行的时候，出现了差异。
 
@@ -44,7 +44,7 @@
 
 修改readme文件之后，可以看到，git提示将要提交的是readme.txt文件，然后commit：
 
-![git-commit-2](jpg\git-commit-2.jpg)
+![git-commit-2](jpg/git-commit-2.jpg)
 
 
 
@@ -54,11 +54,11 @@
 
 查看一下每次提交的历史信息：
 
-![git-log](jpg\git-log.jpg)
+![git-log](jpg/git-log.jpg)
 
 上面日志信息相对比较全面，可以通过参数"--pretty=oneline"显示简洁版本：
 
-![git-log-简洁版](jpg\git-log-简洁版.jpg)
+![git-log-简洁版](jpg/git-log-简洁版.jpg)
 
 
 
@@ -72,19 +72,19 @@
 
 ```git reset --hard HEAD^```：
 
-![git-reset-head-1](jpg\git-reset-head-1.jpg)也看到已经回退到了954fff5这个版本。
+![git-reset-head-1](jpg/git-reset-head-1.jpg)也看到已经回退到了954fff5这个版本。
 
 ### 2.4.2 回退到特定版本
 
 ```git reset --hard 提交编号```：
 
-![git-reset-向前](jpg\git-reset-向前.jpg)
+![git-reset-向前](jpg/git-reset-向前.jpg)
 
 ### 2.4.3 查看提交id
 
 查看历史命令，得到之前提交的commit id：
 
-![git-reflog](jpg\git-reflog.jpg)
+![git-reflog](jpg/git-reflog.jpg)
 
 
 
@@ -100,7 +100,7 @@
 
 版本库中存放了很多东西：其中最重要的就是称为stage（或者叫index）的暂存区，还有Git为我们自动创建的第一个分支master，以及指向master的一个指针叫HEAD。
 
-![git区域](jpg\git区域.jpg)
+![git区域](jpg/git区域.jpg)
 
 上图来自[云峰就她了](https://xiaorui.cc/archives/category/%e6%8a%80%e6%9c%af%e5%88%86%e4%ba%ab)的分享，作者其他的分享也都非常精彩，墙裂推荐。
 
@@ -125,11 +125,11 @@
 
 主要包含了git的基本使用原则，以及提交规范。
 
-![git硬规范](jpg\git硬规范.jpg)
+![git硬规范](jpg/git硬规范.jpg)
 
 
 
-![git提交规范](jpg\git提交规范.jpg)
+![git提交规范](jpg/git提交规范.jpg)
 
 以上图片来自于【1】。
 
