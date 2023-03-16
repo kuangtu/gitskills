@@ -19,6 +19,8 @@
 
 1个文件变动了，2个insert。
 
+如果commit之前需要修改注释，可以通过```git commit -amend``` 进行修改。
+
 ### 2.2.3 git status 查看状态
 
 查看状态，对于之前的readme.txt文件修改其中一行的内容。
