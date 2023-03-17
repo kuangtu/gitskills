@@ -136,8 +136,14 @@
 以上图片来自于【1】。
 
 
+# 本地化
+针对本地中文环境中使用问题进行汇总。
+## git bash 中文显示为数字
+默认中文会显示转移乱码，设置：
+```git config --global core.quotepath false```
+[A few of my favourite Git settings] https://gist.github.com/Aupajo/4133515
 
-# 4. 参考
+# 参考
 
 【1】 [云峰就她了](https://xiaorui.cc/) ，**墙裂推荐**
 
