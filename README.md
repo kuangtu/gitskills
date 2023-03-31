@@ -123,6 +123,30 @@
 （2）如果增到了暂存区，通过reset HEAD 回退到工作区。
 （3）git status，暂存区是干净的，工作区有修改。
 
+
+
+## 2.7 远程仓库操作
+
+### 2.7.1 查看远程仓库信息
+
+```bash
+$ git remote -v
+origin  git@github.com:kuangtu/gitskills.git (fetch)
+origin  git@github.com:kuangtu/gitskills.git (push)
+```
+
+### 2.7.2 切换远程仓库URL
+
+```bash
+git remote set-url origin git@github.com:OWNER/REPOSITORY.git
+```
+
+ 
+
+
+
+
+
 # 3. 使用规范
 
 主要包含了git的基本使用原则，以及提交规范。
