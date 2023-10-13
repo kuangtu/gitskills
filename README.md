@@ -1,5 +1,21 @@
 # 1.前沿
 对于git内容学习整理。
+
+## bash环境安装和配置
+git版本管理工具远程访问github。
+本地环境配置：
+```
+[root@VM-4-14-centos aeron-master]#  git config --global user.name "name"
+[root@VM-4-14-centos aeron-master]#  git config --global user.email "email"
+```
+创建ssh-key:
+```
+ssh-keygen -t rsa -C 'kuangtuweb@gmail.com'
+```
+可以一路回车，然后在~/id_rsa.pub里面拷贝公钥到github页面:
+![sshkey](sshkeys.jpg)
+
+
 # 2.基础内容
 ## 2.1 本地创建
 ### 2.1.1  git init 
