@@ -50,6 +50,10 @@
 
 
 
+### 2.2.6 修改目录
+
+
+
 ## 2.3 版本查看
 
 ### 2.3.1 git log
@@ -165,7 +169,9 @@ git remote set-url origin git@github.com:OWNER/REPOSITORY.git
 ## git bash 中文显示为数字
 默认中文会显示转移乱码，设置：
 ```git config --global core.quotepath false```
-[A few of my favourite Git settings] https://gist.github.com/Aupajo/4133515
+[A few of my favourite Git settings]( https://gist.github.com/Aupajo/4133515)
+
+
 
 # 参考
 
