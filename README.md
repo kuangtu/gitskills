@@ -163,7 +163,38 @@ git remote set-url origin git@github.com:OWNER/REPOSITORY.git
 
  
 
+## 合并
 
+### 远程仓库和本地代码都已修改
+
+远程仓库别人已经提交，较本地代码更”新”。然后本地代码也做了修改。
+
+此时执行`git pull`，报错：
+
+![合并pull出错](jpg/合并pull出错.jpg)
+
+此时可以通过stach 命令先将本地的修改进行保存：
+
+```bash
+$ git stash
+Saved working directory and index state WIP on main: e2edb2f aeron
+
+```
+
+然后`git pull`拉去远程仓库代码：
+
+![合并gitpull](jpg/合并gitpull.jpg)
+
+然后通过`git stash pop`，进行合并：
+
+```bash
+$ git stash pop
+Auto-merging 消息总线/readme.md
+CONFLICT (content): Merge conflict in 消息总线/readme.md
+
+```
+
+出现冲突，需要手动合并。
 
 
 
@@ -186,6 +217,21 @@ git remote set-url origin git@github.com:OWNER/REPOSITORY.git
 默认中文会显示转移乱码，设置：
 ```git config --global core.quotepath false```
 [A few of my favourite Git settings]( https://gist.github.com/Aupajo/4133515)
+
+
+
+# 其他疑难杂症
+
+访问github 22端口超时，可以配置ssh访问github站点的时候使用443端口：
+
+```
+# Add section below to it
+Host github.com
+  Hostname ssh.github.com
+  Port 443
+```
+
+编辑~/.ssh/config文件。
 
 
 
