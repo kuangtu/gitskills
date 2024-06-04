@@ -13,7 +13,7 @@ git版本管理工具远程访问github。
 ssh-keygen -t rsa -C 'kuangtuweb@gmail.com'
 ```
 可以一路回车，然后在~/id_rsa.pub里面拷贝公钥到github页面:
-![sshkey](sshkeys.jpg)
+![sshkey](jpg/sshkeys.jpg)
 
 
 # 2.基础内容
@@ -234,6 +234,12 @@ Host github.com
 编辑~/.ssh/config文件。
 
 
+git clone的时候碰到 issuer certificate，是本地没有配置https信任的服务器。
+将git中的sslverify关掉：
+
+```
+git config --global http.sslverify false
+```
 
 # 参考
 
