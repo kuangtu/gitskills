@@ -161,6 +161,21 @@ origin  git@github.com:kuangtu/gitskills.git (push)
 git remote set-url origin git@github.com:OWNER/REPOSITORY.git
 ```
 
+## 分支管理
+### 创建分支
+`git branch name` 创建一个分支。
+
+### 切换分支
+`git checkout name` 切换一个分支。
+
+### 创建并切换分支
+`git checkout -b name` 创建并切换分支。
+
+### 查看分支
+`git branch` 查看所有分支信息。
+
+### 删除分支
+`git branch -d dev` 删除该分支。
  
 
 ## 合并
