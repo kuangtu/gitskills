@@ -69,6 +69,11 @@ ssh-keygen -t rsa -C 'kuangtuweb@gmail.com'
 ### 2.2.6 修改目录
 
 
+### 修改最近一次提交的信息
+```git commit --amend```
+
+```git commit --amend -m "新的提交信息"```
+
 
 ## 2.3 版本查看
 
@@ -142,6 +147,7 @@ ssh-keygen -t rsa -C 'kuangtuweb@gmail.com'
 总之，就是让这个文件回到最近一次git commit或git add时的状态。
 （2）如果增到了暂存区，通过reset HEAD 回退到工作区。
 （3）git status，暂存区是干净的，工作区有修改。
+
 
 
 
