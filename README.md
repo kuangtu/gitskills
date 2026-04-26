@@ -13,7 +13,7 @@ git版本管理工具远程访问github。
 ssh-keygen -t rsa -C 'kuangtuweb@gmail.com'
 ```
 可以一路回车，然后在~/id_rsa.pub里面拷贝公钥到github页面:
-![sshkey](sshkeys.jpg)
+![sshkey](jpg/sshkeys.jpg)
 
 
 # 2.基础内容
@@ -68,6 +68,11 @@ ssh-keygen -t rsa -C 'kuangtuweb@gmail.com'
 
 ### 2.2.6 修改目录
 
+
+### 修改最近一次提交的信息
+```git commit --amend```
+
+```git commit --amend -m "新的提交信息"```
 
 
 ## 2.3 版本查看
@@ -145,6 +150,7 @@ ssh-keygen -t rsa -C 'kuangtuweb@gmail.com'
 
 
 
+
 ## 2.7 远程仓库操作
 
 ### 2.7.1 查看远程仓库信息
@@ -161,6 +167,21 @@ origin  git@github.com:kuangtu/gitskills.git (push)
 git remote set-url origin git@github.com:OWNER/REPOSITORY.git
 ```
 
+## 分支管理
+### 创建分支
+`git branch name` 创建一个分支。
+
+### 切换分支
+`git checkout name` 切换一个分支。
+
+### 创建并切换分支
+`git checkout -b name` 创建并切换分支。
+
+### 查看分支
+`git branch` 查看所有分支信息。
+
+### 删除分支
+`git branch -d dev` 删除该分支。
  
 
 ## 合并
@@ -234,6 +255,12 @@ Host github.com
 编辑~/.ssh/config文件。
 
 
+git clone的时候碰到 issuer certificate，是本地没有配置https信任的服务器。
+将git中的sslverify关掉：
+
+```
+git config --global http.sslverify false
+```
 
 秘钥失效，本地电脑无法通过 SSH 连接到 GitHub，报错：
 
