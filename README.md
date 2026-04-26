@@ -235,6 +235,62 @@ Host github.com
 
 
 
+秘钥失效，本地电脑无法通过 SSH 连接到 GitHub，报错：
+
+```bash
+gitHub fatal: Could not read from remote repository.
+Please make sure you have the correct access rights
+and the repository exists.
+```
+
+可以测试 SSH 连接：
+
+```bash
+ssh -T git@github.com
+```
+
+报错：
+
+```bash
+git@ssh.github.com: Permission denied (publickey).
+```
+
+秘钥失效了，先生成github专用的秘钥：
+
+```bash
+ssh-keygen -t rsa -C "你的GitHub邮箱"
+```
+
+然后拷贝公钥：
+
+```bash
+cat ~/.ssh/id_ed25519.pub | clip
+```
+
+去github上面黏贴：
+
+> 打开 GitHub → 右上角头像 → **Settings**
+>
+> 左侧 **SSH and GPG keys** → **New SSH key**
+>
+> 直接粘贴（已经复制好了）
+>
+> 点 **Add SSH key**
+
+然后再次测试：
+
+```bash
+ssh -T git@github.com
+```
+
+
+
+> Hi github用户名! You've successfully authenticated, but GitHub does not provide shell access.
+
+
+
+
+
 # 参考
 
 【1】 [云峰就她了](https://xiaorui.cc/) ，**墙裂推荐**
